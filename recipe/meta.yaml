@@ -31,10 +31,10 @@ requirements:
     - click >=7.1.1,<9.0.0
     - rich >=10.11.0,<14.0.0
     - strictyaml >=1.7.0,<2.0.0
-    - pydantic >=1.0,<3.0
+    - pydantic >=1.0,<3.0,!=2.4.0,!=2.4.1
     - sortedcontainers >=2.4.0
     - fsspec >=2023.1.0,<2024.1.0
-    - pyparsing >=3.0.0,<4.0.0
+    - pyparsing >=3.1.0,<4.0.0
     - zstandard >=0.13.0,<1.0.0
   run_constrained:
     - pyarrow >=9.0.0,<14.0.0
