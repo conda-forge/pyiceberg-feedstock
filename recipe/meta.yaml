@@ -37,7 +37,7 @@ requirements:
     - fsspec >=2023.1.0,<2025.1.0
     - pyparsing >=3.1.0,<4.0.0
     - zstandard >=0.13.0,<1.0.0
-    - tenacity = >=8.2.3,<9.0.0
+    - tenacity >=8.2.3,<9.0.0
   run_constrained:
 # https://github.com/apache/iceberg-python/blob/main/pyproject.toml#L60C1-L60C59
 #pyarrow = { version = ">=9.0.0,<16.0.0", optional = true }
