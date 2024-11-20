@@ -38,6 +38,7 @@ requirements:
     - pyparsing >=3.1.0,<4.0.0
     - zstandard >=0.13.0,<1.0.0
     - tenacity >=8.2.3,<10.0.0
+    - cachetools >=5.5.0,<6.0.0
   run_constrained:
 # https://github.com/apache/iceberg-python/blob/main/pyproject.toml#L60C1-L60C59
 #pyarrow = { version = ">=9.0.0,<16.0.0", optional = true }
@@ -68,7 +69,6 @@ requirements:
     - psycopg2-binary >=2.9.6
     - sqlalchemy >=2.0.18,<3.0.0
     - getdaft >=0.2.12
-    - cachetools >=5.5.0,<6.0.0
     - numpy >=1.22.4
 
 test:
