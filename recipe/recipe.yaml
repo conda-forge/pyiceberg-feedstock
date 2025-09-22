@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: pyiceberg
-  version: "0.9.1"
+  version: "0.10.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyiceberg-${{ version }}.tar.gz
-  sha256: 3634134ce33859a441768b39df179b2c6f3de2bbbf506622884f553b013ee799
+  sha256: 2525afa5e7e5fc4e72b291f8e1cc219e982d2bda5ff17e62cd05b8d91c4139f5
 
 build:
-  number: 2
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
@@ -44,7 +44,7 @@ requirements:
     - mmh3 >=4.0.0,<6.0.0
     - requests >=2.20.0,<3.0.0
     - click >=7.1.1,<9.0.0
-    - rich >=10.11.0,<14.0.0
+    - rich >=10.11.0,<15.0.0
     - strictyaml >=1.7.0,<2.0.0
     - pydantic >=2.0,<3.0,!=2.4.0,!=2.4.1  # 2.4.0, 2.4.1 has a critical bug
     - sortedcontainers 2.4.0.*
@@ -52,10 +52,11 @@ requirements:
     - pyparsing >=3.1.0,<4.0.0
     - zstandard >=0.13.0,<1.0.0
     - tenacity >=8.2.3,<10.0.0
-    - cachetools >=5.5.0,<6.0.0
+    - pyroaring >=1.0.0,<2.0.0
+    - cachetools >=5.5.0,<7.0.0
   run_constraints:
     # https://github.com/apache/iceberg-python/blob/main/pyproject.toml#L60C1-L60C59
-    - pyarrow >=17.0.0,<20.0.0
+    - pyarrow >=17.0.0
     - pandas >=1.0.0,<3.0.0
     - python-duckdb >=0.5.0,<2.0.0
     - ray >=2.10.0,<3.0.0
