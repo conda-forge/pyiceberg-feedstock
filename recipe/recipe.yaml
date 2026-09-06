@@ -75,8 +75,8 @@ requirements:
     - google-auth >=2.4.0
     - azure-identity >=1.25.1
     - geoarrow-pyarrow >=0.2.0
-    #- pyiceberg-core >=0.10.1,<0.11.0
-    #- datafusion >=53,<54
+    - pyiceberg-core >=0.10.1,<0.11.0
+    - datafusion >=53,<54
     #- bodo >=2025.7.4
     #- thrift-sasl >=0.4.3
     #- kerberos >=1.3.1,<2.0.0
